@@ -1,0 +1,12 @@
+# Tour of AnVIL
+
+## Introduction
+
+AnVIL consists of several different pieces that work together to provide researchers with the things they need to carry out their analyses. It can be easy to start thinking of AnVIL as the just computing platform (Terra), and that is indeed where you will spend the majority of your time. But AnVIL also includes:
+
+- The AnVIL Data Catalog, providing secure access to a large collection of high-interest genomic datasets, along with the [AnVIL Data Explorer](https://explore.anvilproject.org/datasets) to help you find and import these datasets into your own research.
+- [Dockstore](https://dockstore.org/) for finding and sharing analysis pipelines, which can be imported into AnVIL with the click of a button.
+- The [community support forum](https://help.anvilproject.org/), where you can interact with other AnVIL users as well as members of the AnVIL team to find help and hear about what people are doing on AnVIL.
+- The [AnVIL Portal](https://anvilproject.org/), AnVIL’s primary website, containing documentation and FAQS, announcements about new features and datasets, upcoming events, and more.
+
+In this chapter we will take a brief tour of the broader AnVIL ecosystem, showing you how to access these resources, before diving into the Terra interface.
