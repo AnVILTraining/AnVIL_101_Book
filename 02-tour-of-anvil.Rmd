@@ -33,8 +33,8 @@ We’ve highlighted a few items that may be useful to you:
 
 - Click on the cards to access important AnVIL tools including Terra and Dockstore, which we will discuss in more detail below.
 - Check the menu at the top of the page for:
-  - Learn contains documentation and tutorials
-  - AnVIL Data Explorer lets you find and access datasets hosted by AnVIL
+  - **Learn** contains documentation and tutorials
+  - **AnVIL Data Explorer** lets you find and access datasets hosted by AnVIL
 
 ```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the 'Learn' page on the AnVIL Portal.", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_20#slide=id.g3fb902435d4_1_20" )
@@ -45,4 +45,45 @@ At [anvilproject.org/learn](http://anvilproject.org/learn), you can find documen
 :::{.reflection}
 TODO
 :::
+
+### Data Explorer
+
+The AnVIL Data Explorer ([explore.anvilproject.org/datasets](https://explore.anvilproject.org/datasets)) lets you browse the datasets that are available on AnVIL and import them into Terra for analysis with the click of a button
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the AnVIL Data Explorer. The search box is highlighted", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_28#slide=id.g3fb902435d4_1_28" )
+```
+
+Search by name to find specific datasets, or filter by a variety of facets such as, Diagnosis, Phenotype, or Consent Group.
+
+Click on a dataset name for more detailed information.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the page for an individual controlled-access dataset in the AnVIL Data Explorer. The 'Request Access' button is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_33#slide=id.g3fb902435d4_1_33" )
+```
+
+AnVIL hosts many controlled-access datasets, which are tagged "Access Required". Click on the "Request Access" button to apply for access. You can find more information in the documentation on [Requesting Data Access](https://anvilproject.org/learn/find-data/requesting-data-access).
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the page for an individual dataset for which access has been granted. The 'Export' button is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_37#slide=id.g3fb902435d4_1_37" )
+```
+
+For data which you have permission to access, click on the "Export" button to see options for working with the data, including sending it to Terra for analysis or downloading it to your local machine.
+
+:::{.reflection}
+How many open-access datasets are available on AnVIL?
+<details>
+  <summary>Hint </summary>
+  Filter for Access:Granted
+</details>
+
+Search for [TODO]
+:::
+
+You can find more information about working with data on AnVIL at:
+
+- [AnVIL Data Explorer Guide](https://explore.anvilproject.org/guides)
+- AnVIL documentation on [Finding Data](https://anvilproject.org/learn/find-data)
+- [Data on AnVIL](https://hutchdatascience.org/Data_on_AnVIL/) webbook
+
 
