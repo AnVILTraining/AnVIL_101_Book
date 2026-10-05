@@ -36,7 +36,7 @@ We’ve highlighted a few items that may be useful to you:
   - Learn contains documentation and tutorials
   - AnVIL Data Explorer lets you find and access datasets hosted by AnVIL
 
-```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the "Learn" page on the AnVIL Portal.", fig.align="center"}
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the 'Learn' page on the AnVIL Portal.", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_20#slide=id.g3fb902435d4_1_20" )
 ```
 
