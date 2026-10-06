@@ -77,6 +77,7 @@ How many open-access datasets are available on AnVIL?
   Filter for Access:Granted
 </details>
 
+
 Search for [TODO]
 :::
 
@@ -85,5 +86,30 @@ You can find more information about working with data on AnVIL at:
 - [AnVIL Data Explorer Guide](https://explore.anvilproject.org/guides)
 - AnVIL documentation on [Finding Data](https://anvilproject.org/learn/find-data)
 - [Data on AnVIL](https://hutchdatascience.org/Data_on_AnVIL/) webbook
+
+
+### Dockstore
+
+[Dockstore](https://dockstore.org/) provides a catalog of thousands of reusable workflows which can be used across different platforms, including AnVIL. AnVIL supports workflows written in Workflow Description Language (WDL).
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the Dockstore website.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_41#slide=id.g3fb902435d4_1_41" )
+```
+
+You can search for workflows by name, author, or organization, among other features.
+
+Click on the name of a workflow to view more details.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the page for an individual workflow on Dockstore. The 'AnVIL' button is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_45#slide=id.g3fb902435d4_1_45" )
+```
+
+From here you can import the workflow into AnVIL with the click of a button.
+
+:::{.reflection}
+TODO
+:::
+
+You can find more information about running workflows on AnVIL in the AnVIL documentation on [Running Analysis Workflows](https://anvilproject.org/learn/run-analyses-workflows)
 
 
