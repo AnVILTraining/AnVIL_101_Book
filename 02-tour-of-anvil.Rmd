@@ -129,3 +129,10 @@ TODO
 :::
 
 
+## Terra
+
+We end this chapter with a brief video tour of Terra, AnVIL’s cloud computing platform. In the next chapter, you’ll dive deeper with a hands-on test drive.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LKoOEpA8NMk?si=2q7T_GGb8UUrYX3m&amp;start=2265&amp;end=3104" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
