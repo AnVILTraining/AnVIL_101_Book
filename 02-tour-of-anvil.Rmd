@@ -90,7 +90,7 @@ You can find more information about working with data on AnVIL at:
 
 ### Dockstore
 
-[Dockstore](https://dockstore.org/) provides a catalog of thousands of reusable workflows which can be used across different platforms, including AnVIL. AnVIL supports workflows written in Workflow Description Language (WDL).
+[Dockstore](https://dockstore.org/) provides a catalog of thousands of reusable workflows which can be used across different platforms, including AnVIL. AnVIL supports workflows written in **Workflow Description Language (WDL)**.
 
 ```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the Dockstore website.", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_41#slide=id.g3fb902435d4_1_41" )
@@ -111,5 +111,21 @@ TODO
 :::
 
 You can find more information about running workflows on AnVIL in the AnVIL documentation on [Running Analysis Workflows](https://anvilproject.org/learn/run-analyses-workflows).
+
+
+### Support Forum
+
+Through the [AnVIL community forum](https://help.anvilproject.org/) you can find help and interact with the AnVIL team and the broader AnVIL community. Members of the AnVIL team regularly monitor the forum and respond to questions.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the AnVIL community support forum. The search box is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_49#slide=id.g3fb902435d4_1_49" )
+```
+
+
+Try searching to see if anyone else has had the same question, or post a new topic so that others can benefit from seeing how your question was resolved.
+
+:::{.reflection}
+TODO
+:::
 
 
