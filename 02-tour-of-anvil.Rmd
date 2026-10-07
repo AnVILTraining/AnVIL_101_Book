@@ -48,7 +48,7 @@ TODO
 
 ### Data Explorer
 
-The AnVIL Data Explorer ([explore.anvilproject.org/datasets](https://explore.anvilproject.org/datasets)) lets you browse the datasets that are available on AnVIL and import them into Terra for analysis with the click of a button
+The AnVIL Data Explorer ([explore.anvilproject.org/datasets](https://explore.anvilproject.org/datasets)) lets you browse the datasets that are available on AnVIL and import them into Terra for analysis with the click of a button.
 
 ```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the AnVIL Data Explorer. The search box is highlighted", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_28#slide=id.g3fb902435d4_1_28" )
