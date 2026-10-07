@@ -110,6 +110,6 @@ From here you can import the workflow into AnVIL with the click of a button.
 TODO
 :::
 
-You can find more information about running workflows on AnVIL in the AnVIL documentation on [Running Analysis Workflows](https://anvilproject.org/learn/run-analyses-workflows)
+You can find more information about running workflows on AnVIL in the AnVIL documentation on [Running Analysis Workflows](https://anvilproject.org/learn/run-analyses-workflows).
 
 
