@@ -9,7 +9,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 ```
 
 
-It can be easy to start thinking of AnVIL as the just computing platform (Terra), and that is indeed where you will spend the majority of your time. But AnVIL also includes:
+It can be easy to start thinking of AnVIL as just the computing platform (Terra), and that is indeed where you will spend the majority of your time. But AnVIL also includes:
 
 - The AnVIL Data Catalog, providing secure access to a large collection of high-interest genomic datasets, along with the [AnVIL Data Explorer](https://explore.anvilproject.org/datasets) to help you find and import these datasets into your own research.
 - [Dockstore](https://dockstore.org/) for finding and sharing analysis pipelines, which can be imported into AnVIL with the click of a button.
