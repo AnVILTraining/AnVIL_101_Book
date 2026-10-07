@@ -135,6 +135,6 @@ We end this chapter with a brief video tour of Terra, AnVIL’s cloud computing 
 
 (This video is a recording from our live AnVIL 101 workshop. It should automatically jump to touring a Terra Workspace, but in case it doesn't, the relevant segment runs from 37:15-51:45)
 
-<iframe width="784" height="441" src="https://www.youtube.com/embed/LKoOEpA8NMk?si=2q7T_GGb8UUrYX3m&amp;start=2235&amp;end=3104" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="800" height="250" src="https://www.youtube.com/embed/LKoOEpA8NMk?si=2q7T_GGb8UUrYX3m&amp;start=2235&amp;end=3104" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
