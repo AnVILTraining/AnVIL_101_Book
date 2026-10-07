@@ -32,7 +32,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 We’ve highlighted a few items that may be useful to you:
 
 - Click on the cards to access important AnVIL tools including Terra and Dockstore, which we will discuss in more detail below.
-- Check the menu at the top of the page for:
+- Check the menu at the top of the page:
   - **Learn** contains documentation and tutorials
   - **AnVIL Data Explorer** lets you find and access datasets hosted by AnVIL
 
