@@ -4,6 +4,7 @@ repo: https://github.com/AnVILTraining/AnVIL_101_Book/
 rmd_files: ["index.Rmd",
             "01-what-is-anvil.Rmd",
             "Appendix.Rmd",
+            "create-account.Rmd",
             "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]
