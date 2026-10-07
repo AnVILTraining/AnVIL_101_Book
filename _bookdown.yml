@@ -3,6 +3,7 @@ chapter_name: "Chapter "
 repo: https://github.com/AnVILTraining/AnVIL_101_Book/
 rmd_files: ["index.Rmd",
             "01-what-is-anvil.Rmd",
+            "02-tour-of-anvil.Rmd",
             "Appendix.Rmd",
             "About.Rmd"]
 new_session: yes
