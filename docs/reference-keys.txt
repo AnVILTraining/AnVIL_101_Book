@@ -4,3 +4,4 @@ components-of-anvil
 data
 compute
 community
+account-setup
