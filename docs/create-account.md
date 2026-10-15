@@ -7,11 +7,12 @@ Please complete these steps to sign up for AnVIL. This should take less than 15 
 <img src="create-account_files/figure-html//1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw_h79f055448b20f32f_5_11.png" alt="Diagram showing the 3 steps for signing up for AnVIL: 1. Google Chrome, 2. AnVIL account (on Terra), and 3. Billing Project." width="80%" style="display: block; margin: auto;" />
 
 
-1. ✅ AnVIL is supported by **Google Chrome**. if you don’t already have it, please [install Google Chrome](https://www.google.com/chrome/). If you already have it installed, make sure to [update Google Chrome](https://www.google.com/chrome/update/).
+1. ✅ AnVIL is supported by **Google Chrome**. If you don’t already have it, please [install Google Chrome](https://www.google.com/chrome/). If you already have it installed, make sure to [update Google Chrome](https://www.google.com/chrome/update/).
 
 2. ✅ You must create an **AnVIL account** to follow the hands-on exercises. AnVIL uses a platform called Terra to manage computing environments, so you will need to register through Terra.
-    - [Set up a Terra account](https://support.terra.bio/hc/en-us/articles/360028235911-How-to-register-for-a-Terra-account) - You will need a Gmail account or another email associated with a Google identity. *We strongly recommend using your institutional email so you can leverage AnVIL data*.
-    - If your institutional email is not associated with a Google identity, you can [create a Google identity linked to your institutional email](https://support.terra.bio/hc/en-us/articles/360029186611-Setting-up-a-Google-account-with-a-non-Google-email).
+    - [Set up a Terra account](https://support.terra.bio/hc/en-us/articles/360028235911-How-to-register-for-a-Terra-account) - You will need a Google account (either a gmail account or another email associated with a Google identity). *We strongly recommend using your institutional email so you can leverage AnVIL data*.
+    - **If your institution uses Google accounts** (e.g. gmail), you can simply log in to Terra using your institutional Google account.
+    - **If your institution does not use Google accounts**, you can [create a Google identity linked to your institutional email](https://support.terra.bio/hc/en-us/articles/360029186611-Setting-up-a-Google-account-with-a-non-Google-email).
 
 3. ✅ You will need access to a **Billing Project** in order to work on AnVIL.
     - If you will be attending a live AnVIL training event (such as the [virtual AnVIL 101 workshop](https://training.anvilproject.org/anvil101.html)), make sure to **provide your Google identity (i.e. e-mail address) when you register, or when prompted by the workshop instructor**, so that they can give you access to the workshop Billing Project. The AnVIL Training team will cover the costs of workshop activities.
