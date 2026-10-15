@@ -9,7 +9,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 ```
 
 
-1. ✅ AnVIL is supported by **Google Chrome**. if you don’t already have it, please [install Google Chrome](https://www.google.com/chrome/). If you already have it installed, make sure to [update Google Chrome](https://www.google.com/chrome/update/).
+1. ✅ AnVIL is supported by **Google Chrome**. If you don’t already have it, please [install Google Chrome](https://www.google.com/chrome/). If you already have it installed, make sure to [update Google Chrome](https://www.google.com/chrome/update/).
 
 2. ✅ You must create an **AnVIL account** to follow the hands-on exercises. AnVIL uses a platform called Terra to manage computing environments, so you will need to register through Terra.
     - [Set up a Terra account](https://support.terra.bio/hc/en-us/articles/360028235911-How-to-register-for-a-Terra-account) - You will need a Gmail account or another email associated with a Google identity. *We strongly recommend using your institutional email so you can leverage AnVIL data*.
