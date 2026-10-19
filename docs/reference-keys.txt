@@ -4,4 +4,13 @@ components-of-anvil
 data
 compute
 community
+tour-of-anvil
+introduction
+community-portal-and-forum
+anvil-portal
+support-forum
+data-data-explorer
+compute-dockstore-and-terra
+dockstore
+terra
 account-setup
