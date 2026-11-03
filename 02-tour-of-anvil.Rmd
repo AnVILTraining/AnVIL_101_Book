@@ -35,8 +35,8 @@ We’ve highlighted a few items that may be useful to you:
 
 - Click on the cards to access important AnVIL tools including Terra and Dockstore, which we will discuss in more detail below.
 - Check the menu at the top of the page:
-  - **Learn** contains documentation and tutorials
   - **AnVIL Data Explorer** lets you find and access datasets hosted by AnVIL
+  - **Learn** contains documentation and tutorials
 
 ```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the 'Learn' page on the AnVIL Portal.", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.g3fb902435d4_1_20#slide=id.g3fb902435d4_1_20" )
@@ -108,6 +108,20 @@ You can find more information about working with data on AnVIL at:
 
 ## Compute: Dockstore and Terra
 
+Finally, let's look at how you compute on AnVIL. There are two major components here:
+
+- **Terra** is where you run analyses, both interactive (Jupyter, RStudio, Galaxy) and batch-submitted (WDL).
+- **Dockstore** is a repository of WDL workflows, which you can import into Terra with the click of a button.
+
+### Terra
+
+Terra is where you will spend the majority of your time on AnVIL, analyzing your data. In the next chapter, you will work through a hands-on activity in Terra, where you will start up your own cloud environment. For now, watch this video tour of Terra to help you get oriented and see what it's like to work on AnVIL.
+
+(This video is a recording from our live AnVIL 101 workshop. It should automatically jump to touring a Terra Workspace, but in case it doesn't, the relevant segment runs from 37:15-51:45)
+
+<iframe width="800" height="250" src="https://www.youtube.com/embed/LKoOEpA8NMk?si=2q7T_GGb8UUrYX3m&amp;start=2235&amp;end=3104" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ### Dockstore
 
 [Dockstore](https://dockstore.org/) provides a catalog of thousands of reusable workflows which can be used across different platforms, including AnVIL. AnVIL supports workflows written in **Workflow Description Language (WDL)**.
@@ -132,13 +146,6 @@ TODO
 
 You can find more information about running workflows on AnVIL in the AnVIL documentation on [Running Analysis Workflows](https://anvilproject.org/learn/run-analyses-workflows).
 
+## Wrap-up
 
-### Terra
-
-We end this chapter with a brief video tour of Terra, AnVIL’s cloud computing platform. In the next chapter, you’ll dive deeper with a hands-on walkthrough.
-
-(This video is a recording from our live AnVIL 101 workshop. It should automatically jump to touring a Terra Workspace, but in case it doesn't, the relevant segment runs from 37:15-51:45)
-
-<iframe width="800" height="250" src="https://www.youtube.com/embed/LKoOEpA8NMk?si=2q7T_GGb8UUrYX3m&amp;start=2235&amp;end=3104" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+This concludes our overview of the AnVIL ecosystem. Now it's time to jump into Terra for some hands-on practice computing on AnVIL!
