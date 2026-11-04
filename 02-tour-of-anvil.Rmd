@@ -66,7 +66,7 @@ Try searching to see if anyone else has had the same question, or post a new top
 
 **Try it yourself!**
 
-Use the searchbox to find posts from real AnVIL users and AnVIL Team members discussing various issues and questions that might come up as you’re working on AnVIL.
+Head to  [help.anvilproject.org](https://help.anvilproject.org/) and use the searchbox to find posts from real AnVIL users and AnVIL Team members.
 
 Here are some suggestions of topics that you may be interested in:
 
@@ -109,13 +109,13 @@ For data which you have permission to access, click on the "Export" button to se
 
 Head to ([explore.anvilproject.org/datasets](https://explore.anvilproject.org/datasets)) and try to find out:
 
-How many open-access datasets are available on AnVIL?
+- How many open-access datasets are available on AnVIL?
 
-- <details> <summary>Hint </summary> Filter for Access:Granted </details>
+  - <details> <summary>Hint </summary> Filter for Access:Granted </details>
 
-What GTEx datasets are available on AnVIL?
+- What GTEx datasets are available on AnVIL?
 
-- <details> <summary>Hint </summary> Search for "GTEx" </details>
+  - <details> <summary>Hint </summary> Search for "GTEx" </details>
 
 :::
 
