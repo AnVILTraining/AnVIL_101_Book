@@ -32,9 +32,11 @@ discoverable
 DMS
 docx
 Dockstore
+dockstore
 dropdown
 eMERGE
 FedRAMP
+GATK
 GDSCN
 github
 Glimma
@@ -80,6 +82,7 @@ roadmap
 RStudio
 Scalability
 scalable
+searchbox
 seqr
 Telomere
 terra
