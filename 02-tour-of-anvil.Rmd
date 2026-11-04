@@ -64,6 +64,8 @@ Try searching to see if anyone else has had the same question, or post a new top
 
 :::{.reflection}
 
+**Try it yourself!**
+
 Use the searchbox to find posts from real AnVIL users and AnVIL Team members discussing various issues and questions that might come up as you’re working on AnVIL.
 
 Here are some suggestions of topics that you may be interested in:
@@ -102,6 +104,10 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 For data which you have permission to access, click on the "Export" button to see options for working with the data, including sending it to Terra for analysis or downloading it to your local machine.
 
 :::{.reflection}
+
+**Try it yourself!**
+
+Head to ([explore.anvilproject.org/datasets](https://explore.anvilproject.org/datasets)) and try to find out:
 
 How many open-access datasets are available on AnVIL?
 
