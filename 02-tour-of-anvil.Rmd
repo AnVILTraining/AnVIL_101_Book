@@ -18,6 +18,12 @@ It can be easy to start thinking of AnVIL as just the computing platform (Terra)
 
 In this chapter we will take a brief tour of the broader AnVIL ecosystem, showing you how to access these resources, before diving into the Terra interface.
 
+:::{.reflection}
+
+Follow along with these callout boxes to practice getting comfortable with AnVIL!
+
+:::
+
 ## Community: Portal and Forum
 
 A great way to start your AnVIL journey! Through the portal and support forum you can learn more about AnVIL and get answers to your questions.
@@ -44,9 +50,6 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 
 At [anvilproject.org/learn](http://anvilproject.org/learn), you can find documentation and tutorials for many of AnVIL’s features.
 
-:::{.reflection}
-TODO
-:::
 
 ### Support Forum
 
@@ -60,7 +63,17 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 Try searching to see if anyone else has had the same question, or post a new topic so that others can benefit from seeing how your question was resolved.
 
 :::{.reflection}
-TODO
+
+Use the searchbox to find posts from real AnVIL users and AnVIL Team members discussing various issues and questions that might come up as you’re working on AnVIL.
+
+Here are some suggestions of topics that you may be interested in:
+
+- GTEx
+- Galaxy
+- Billing
+
+Or search for other topics that interest you.
+
 :::
 
 
@@ -89,14 +102,15 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 For data which you have permission to access, click on the "Export" button to see options for working with the data, including sending it to Terra for analysis or downloading it to your local machine.
 
 :::{.reflection}
+
 How many open-access datasets are available on AnVIL?
-<details>
-  <summary>Hint </summary>
-  Filter for Access:Granted
-</details>
 
+- <details> <summary>Hint </summary> Filter for Access:Granted </details>
 
-Search for [TODO]
+What GTEx datasets are available on AnVIL?
+
+- <details> <summary>Hint </summary> Search for "GTEx" </details>
+
 :::
 
 You can find more information about working with data on AnVIL at:
