@@ -1,3 +1,19 @@
 # Hands-on Exercises
 
-Coming soon!
+In this chapter you will get some hands-on experience with AnVIL and learn how to:
+
+1. Clone a Terra Workspace, creating your own space where you can organize data and carry out analyses
+1. Explore your Workspace, learning where your data lives and how Terra is organized.
+1. Launch a cloud computing environment (RStudio)
+
+## Preparation
+
+:::{.warning}
+
+1. If you have not previously done so, please follow the [account setup instructions](#create-account) to **create an AnVIL account**.
+2. Make sure that you have access to a **Billing Project**.
+  a. If you are attending a workshop, you will need to provide your instructor with the Google identity (i.e. email address) that you used to create your AnVIL account, so that they can add you to the workshop Billing Project.
+  b. If you are working through this content independently, you will need to set one up yourself, or contact whoever is managing billing for your team.
+
+:::
+
