@@ -14,3 +14,23 @@ In this chapter you will get some hands-on experience with AnVIL. You will first
 
 :::
 
+
+## MAGE Dataset
+
+For this exercise, we will be working with some data from the Multi-ancestry Analysis of Gene Expression (MAGE) dataset. The MAGE dataset contains RNA-seq data representing 26 globally-distributed populations across five continental groups.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h6f9a593aac11593d_0_0#slide=id.h6f9a593aac11593d_0_0" )
+```
+
+
+MAGE is an open access dataset, so no special permissions are needed to work with the data. You can find out more about the project in the [MAGE paper](https://doi.org/10.1038/s41586-024-07708-2) and the [MAGE GitHub repository](https://github.com/mccoy-lab/MAGE).
+
+To help you get started, we have set up a Workspace containing some of the MAGE data. To keep these exercises quick and cheap, this Workspace only includes a few of the MAGE files.
+
+:::{.notice}
+
+After logging in to Terra, please navigate to https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage
+
+:::
+
