@@ -1,3 +1,34 @@
 # Hands-on Exercises
 
-Coming soon!
+In this chapter you will get some hands-on experience with AnVIL. You will first **clone a Terra Workspace**, creating your own space where you can organize data and carry out analyses. You will then **explore your Workspace**, learning where your data lives and how Terra is organized. Finally, you will learn how to **launch a cloud computing environment** (RStudio).
+
+## Preparation
+
+:::{.warning}
+
+1. If you have not previously done so, please follow the [account setup instructions](#create-account) to **create an AnVIL account**.
+2. Make sure that you have access to a **Billing Project**.
+
+    - If you are attending a workshop, you will need to provide your instructor with the Google identity (i.e. email address) that you used to create your AnVIL account, so that they can add you to the workshop Billing Project.
+    - If you are working through this content independently, you will need to set one up yourself, or contact whoever is managing billing for your team.
+
+:::
+
+
+## MAGE Dataset
+
+For this exercise, we will be working with some data from the Multi-ancestry Analysis of Gene Expression (MAGE) dataset. The MAGE dataset contains RNA-seq data representing 26 globally-distributed populations across five continental groups.
+
+<img src="03-hands-on-anvil_files/figure-html//1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw_h6f9a593aac11593d_0_0.png" width="80%" style="display: block; margin: auto;" />
+
+
+MAGE is an open access dataset, so no special permissions are needed to work with the data. You can find out more about the project in the [MAGE paper](https://doi.org/10.1038/s41586-024-07708-2) and the [MAGE GitHub repository](https://github.com/mccoy-lab/MAGE).
+
+To help you get started, we have set up a Workspace containing some of the MAGE data. To keep these exercises quick and cheap, this Workspace only includes a few of the MAGE files.
+
+:::{.notice}
+
+After logging in to Terra, please navigate to https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage
+
+:::
+
