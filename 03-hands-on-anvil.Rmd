@@ -1,12 +1,6 @@
 # Hands-on Exercises
 
-In this chapter you will get some hands-on experience with AnVIL!
-
-You will learn how to:
-
-1. Clone a Terra Workspace, creating your own space where you can organize data and carry out analyses
-1. Explore your Workspace, learning where your data lives and how Terra is organized
-1. Launch a cloud computing environment (RStudio)
+In this chapter you will get some hands-on experience with AnVIL. You will first **clone a Terra Workspace**, creating your own space where you can organize data and carry out analyses. You will then **explore your Workspace**, learning where your data lives and how Terra is organized. Finally, you will learn how to **launch a cloud computing environment** (RStudio).
 
 ## Preparation
 
