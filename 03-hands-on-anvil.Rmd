@@ -74,7 +74,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBv
 ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_522#slide=id.h7654b6cf3b3cecb3_0_522")
     ```
 
-1. After a brief wait, you should be dropped into your own copy of the Workspace. You can also find your new Workspace by going to https://anvil.terra.bio/#workspaces (under MY WORKSPACES), or you can navigate to it directly by filling the billing project and name into the url (`https://anvil.terra.bio/#workspaces/YOUR_BILLING_PROJECT/YOUR_WORKSPACE_NAME`).
+1. After a brief wait, you should be dropped into your own copy of the Workspace. You can also find your new Workspace by going to https://anvil.terra.bio/#workspaces, where it will be listed under MY WORKSPACES, or you can navigate to it directly by filling the billing project and name into the url (`https://anvil.terra.bio/#workspaces/YOUR_BILLING_PROJECT/YOUR_WORKSPACE_NAME`).
 
 :::
 
