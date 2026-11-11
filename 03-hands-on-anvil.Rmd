@@ -9,7 +9,7 @@ In this chapter you will get some hands-on experience with AnVIL. You will first
 1. If you have not previously done so, please follow the [account setup instructions](#create-account) to **create an AnVIL account**.
 2. Make sure that you have access to a **Billing Project**.
 
-    - If you are attending a workshop, you will need to provide your instructor with the Google identity (i.e. email address) that you used to create your AnVIL account, so that they can add you to the workshop Billing Project.
+    - If you are attending a workshop, make sure your instructor has your Google identity (i.e. email address) that you used to create your AnVIL account, so that they can add you to the workshop Billing Project.
     - If you are working through this content independently, you will need to set one up yourself, or contact whoever is managing billing for your team.
 
 :::
@@ -33,4 +33,53 @@ To help you get started, we have set up a Workspace containing some of the MAGE 
 After logging in to Terra, please navigate to https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage
 
 :::
+
+
+## Clone Workspace
+
+We have set up this Workspace so that everyone has "read" access, but only the AnVIL Training Team has permission to "write" or "compute". This means
+
+- ✅ You can see the files in this Workspace
+- ❌ You **cannot** edit the files or add more files
+- ❌ You **cannot** launch an interactive computing environment or run a compute job.
+
+These settings prevent other AnVIL users from overwriting the files or spending down the AnVIL Training Team’s computing budget.
+
+The first thing you will need to do is to **"clone" the Workspace**. This will create your own, private copy of the Workspace where you will be able to edit files and run computation.
+
+:::{.notice}
+**Tip**
+At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.
+:::
+
+To clone an AnVIL Workspace:
+
+1. Go to the MAGE demo Workspace by clicking this link: https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage.
+    
+1. Clone the workspace by clicking the 3-dot menu button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png){width=25px}). Select "Clone".
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt="Screenshot showing the 3-dot menu button. The button has been clicked revealing the 'clone' option. The Clone option and the 3-dot menu button are highlighted."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_348#slide=id.h7654b6cf3b3cecb3_0_348")
+    ```
+
+1. You will see a popup box appear, asking you to configure your Workspace
+    a. Give your Workspace clone a name by adding an underscore ("_") and your name or initials. For example, `demos-explore-mage_KCox`. (Workspaces must have unique names, and using your name or initials will help your instructor identify your Workspace if you need help)
+    a. Select the Billing Project that your instructor has provided for this workshop (or use your own).
+    a. Click "Quick Create Workspace".
+
+    
+    ```{r, echo=FALSE, out.width = '100%', fig.alt="Screenshot showing the 'clone a workspace' popout. The Workspace name, Billing Project, and Quick Create Workspace button have been filled in and highlighted."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_522#slide=id.h7654b6cf3b3cecb3_0_522")
+    ```
+
+1. After a brief wait, you should be dropped into your own copy of the Workspace. You can also find your new Workspace by going to https://anvil.terra.bio/#workspaces (under MY WORKSPACES), or you can navigate to it directly by filling the billing project and name into the url (`https://anvil.terra.bio/#workspaces/YOUR_BILLING_PROJECT/YOUR_WORKSPACE_NAME`).
+
+Congratulations! You are now the **owner** of a shiny new Workspace. Since you are the owner, within your Workspace you can:
+
+- ✅ Add, edit, and delete any files in the Workspace
+- ✅ Launch interactive computing environments and compute jobs (funded by the Billing Project that you selected when you cloned the Workspace)
+- ✅ Share your private copy of the Workspace with other AnVIL users, and control the permissions they have in your Workspace (by default, you are the only one with access).
+
+
+
 
