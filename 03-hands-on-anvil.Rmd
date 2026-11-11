@@ -52,9 +52,9 @@ The first thing you will need to do is to **"clone" the Workspace**. This will c
 At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.
 :::
 
-To clone an AnVIL Workspace:
+To clone the MAGE demo Workspace:
 
-1. Go to the MAGE demo Workspace by clicking this link: https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage.
+1. If you're not already there, open the MAGE demo Workspace by clicking this link: https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage.
     
 1. Clone the workspace by clicking the 3-dot menu button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png){width=25px}). Select "Clone".
 
@@ -63,12 +63,12 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBv
     ```
 
 1. You will see a popup box appear, asking you to configure your Workspace
-    a. Give your Workspace clone a name by adding an underscore ("_") and your name or initials. For example, `demos-explore-mage_KCox`. (Workspaces must have unique names, and using your name or initials will help your instructor identify your Workspace if you need help)
+    a. Give your Workspace clone a name by adding an underscore ("_") and your name or initials (`demos-explore-mage_MyName`). Workspaces must have unique names, and using your name or initials will help your instructor identify your Workspace if you need help.
     a. Select the Billing Project that your instructor has provided for this workshop (or use your own).
     a. Click "Quick Create Workspace".
 
     
-    ```{r, echo=FALSE, out.width = '100%', fig.alt="Screenshot showing the 'clone a workspace' popout. The Workspace name, Billing Project, and Quick Create Workspace button have been filled in and highlighted."}
+    ```{r, echo=FALSE, out.width = '100%', fig.alt="Screenshot showing the 'clone a workspace' popup. The Workspace name, Billing Project, and Quick Create Workspace button have been filled in and highlighted."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_522#slide=id.h7654b6cf3b3cecb3_0_522")
     ```
 
