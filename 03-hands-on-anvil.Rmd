@@ -24,7 +24,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 ```
 
 
-MAGE is an open access dataset, so no special permissions are needed to work with the data. You can find out more about the project in the [MAGE paper](https://doi.org/10.1038/s41586-024-07708-2) and the [MAGE GitHub repository](https://github.com/mccoy-lab/MAGE).
+MAGE is an open access dataset, so no special permissions are needed to work with the data. We won't dig very deeply into the data today, but if you're curious, you can find out more about the project in the [MAGE paper](https://doi.org/10.1038/s41586-024-07708-2) and the [MAGE GitHub repository](https://github.com/mccoy-lab/MAGE).
 
 To help you get started, we have set up a Workspace containing some of the MAGE data. To keep these exercises quick and cheap, this Workspace only includes a few of the MAGE files.
 
@@ -54,6 +54,8 @@ At this point, it might make things easier to open up a new window in your brows
 
 To clone the MAGE demo Workspace:
 
+:::{.borrowed_chunk}
+
 1. If you're not already there, open the MAGE demo Workspace by clicking this link: https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage.
     
 1. Clone the workspace by clicking the 3-dot menu button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png){width=25px}). Select "Clone".
@@ -73,6 +75,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBv
     ```
 
 1. After a brief wait, you should be dropped into your own copy of the Workspace. You can also find your new Workspace by going to https://anvil.terra.bio/#workspaces (under MY WORKSPACES), or you can navigate to it directly by filling the billing project and name into the url (`https://anvil.terra.bio/#workspaces/YOUR_BILLING_PROJECT/YOUR_WORKSPACE_NAME`).
+
+:::
 
 Congratulations! You are now the **owner** of a shiny new Workspace. Since you are the owner, within your Workspace you can:
 
