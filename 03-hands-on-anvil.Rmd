@@ -82,7 +82,45 @@ Congratulations! You are now the **owner** of a shiny new Workspace. Since you a
 
 - ✅ Add, edit, and delete any files in the Workspace
 - ✅ Launch interactive computing environments and compute jobs (funded by the Billing Project that you selected when you cloned the Workspace)
-- ✅ Share your private copy of the Workspace with other AnVIL users, and control the permissions they have in your Workspace (by default, you are the only one with access).
+- ✅ Share your private copy of the Workspace with other AnVIL users, and control the permissions they have in your Workspace (by default, you and whoever owns the Billing Project are the only ones with access).
+
+
+## Explore Workspace
+
+Terra Workspaces are the fundamental place for organizing your research on AnVIL Let’s take a few minutes to look around the Workspace and get familiar with how things are organized.
+
+### Dashboard
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Dashboard", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_706#slide=id.h7654b6cf3b3cecb3_0_706" )
+```
+
+When you first open a Workspace, you will land on the Dashboard. The Dashboard contains a quick summary of useful information about the Workspace
+
+- **ABOUT THE WORKSPACE**: Similar to a README file, this is a place where you can record any useful information about the workspace, either notes to yourself (in a private Workspace) or information for collaborators (in a shared Workspace).
+- **WORKSPACE INFORMATION**: Here you can see what permissions you have in the Workspace 
+  - **Reader** means you can open the Workspace and see everything, but can’t do any computations or make any edits.
+  - **Writer** means you can run computations, which will charge costs to the Workspace’s Billing Project. Writers can also make edits to the Workspace, such as uploading, modifying, and deleting files.
+  - **Owner** is similar to Writer, but also allows you to control who can access the Workspace.
+- **CLOUD INFORMATION**: Here you can find details about the cloud resources that are backing your Workspace, such as the Google Cloud Bucket where your data are stored, and the Google Billing Project that funds any analyses you do in this workspace.
+This can be useful if you need to access or transfer data to or from your Workspace.
+- **OWNERS**: Lists the Workspace owners. This can be useful if you need to know who to contact about configuring access to the Workspace or other Workspace issues.
+
+
+:::{.reflection}
+
+**Try it yourself!**
+
+- What is your Google Bucket Name?
+
+  - <details> <summary>Hint </summary> Look under CLOUD INFORMATION </details>
+
+- Make an edit to your Workspace description.
+
+  - <details> <summary>Hint </summary> Click the pencil icon next to “ABOUT THIS WORKSPACE” </details>
+
+:::
+
 
 
 
