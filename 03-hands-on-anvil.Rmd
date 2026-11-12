@@ -111,7 +111,7 @@ This can be useful if you need to access or transfer data to or from your Worksp
 
 **Try it yourself!**
 
-- What is your Google Bucket Name?
+- What is the Google Bucket Name for your cloned Workspace?
 
   - <details> <summary>Hint </summary> Look under CLOUD INFORMATION </details>
 
