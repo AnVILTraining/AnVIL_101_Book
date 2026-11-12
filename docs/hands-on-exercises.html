@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2026-11-04" />
+<meta name="date" content="2026-11-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -30,7 +30,7 @@
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="tour-of-anvil.html"/>
-<link rel="next" href="account-setup.html"/>
+<link rel="next" href="create-account.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -120,11 +120,20 @@
 </ul></li>
 <li class="chapter" data-level="2.5" data-path="tour-of-anvil.html"><a href="tour-of-anvil.html#wrap-up"><i class="fa fa-check"></i><b>2.5</b> Wrap-up</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="hands-on-exercises.html"><a href="hands-on-exercises.html"><i class="fa fa-check"></i><b>3</b> Hands-on Exercises</a></li>
-<li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="account-setup.html"><a href="account-setup.html"><i class="fa fa-check"></i><b>A</b> Account Setup</a>
+<li class="chapter" data-level="3" data-path="hands-on-exercises.html"><a href="hands-on-exercises.html"><i class="fa fa-check"></i><b>3</b> Hands-on Exercises</a>
 <ul>
-<li class="chapter" data-level="" data-path="account-setup.html"><a href="account-setup.html#faqs"><i class="fa fa-check"></i>FAQs</a></li>
+<li class="chapter" data-level="3.1" data-path="hands-on-exercises.html"><a href="hands-on-exercises.html#preparation"><i class="fa fa-check"></i><b>3.1</b> Preparation</a></li>
+<li class="chapter" data-level="3.2" data-path="hands-on-exercises.html"><a href="hands-on-exercises.html#mage-dataset"><i class="fa fa-check"></i><b>3.2</b> MAGE Dataset</a></li>
+<li class="chapter" data-level="3.3" data-path="hands-on-exercises.html"><a href="hands-on-exercises.html#clone-workspace"><i class="fa fa-check"></i><b>3.3</b> Clone Workspace</a></li>
+<li class="chapter" data-level="3.4" data-path="hands-on-exercises.html"><a href="hands-on-exercises.html#explore-workspace"><i class="fa fa-check"></i><b>3.4</b> Explore Workspace</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="hands-on-exercises.html"><a href="hands-on-exercises.html#dashboard"><i class="fa fa-check"></i><b>3.4.1</b> Dashboard</a></li>
+</ul></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="create-account.html"><a href="create-account.html"><i class="fa fa-check"></i><b>A</b> Account Setup</a>
+<ul>
+<li class="chapter" data-level="" data-path="create-account.html"><a href="create-account.html#faqs"><i class="fa fa-check"></i>FAQs</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="divider"></li>
@@ -162,8 +171,112 @@
 </div>
 <div id="hands-on-exercises" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Hands-on Exercises<a href="hands-on-exercises.html#hands-on-exercises" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Coming soon!</p>
+<p>In this chapter you will get some hands-on experience with AnVIL. You will first <strong>clone a Terra Workspace</strong>, creating your own space where you can organize data and carry out analyses. You will then <strong>explore your Workspace</strong>, learning where your data lives and how Terra is organized. Finally, you will learn how to <strong>launch a cloud computing environment</strong> (RStudio).</p>
+<div id="preparation" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Preparation<a href="hands-on-exercises.html#preparation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="warning">
+<ol style="list-style-type: decimal">
+<li><p>If you have not previously done so, please follow the <a href="create-account.html#create-account">account setup instructions</a> to <strong>create an AnVIL account</strong>.</p></li>
+<li><p>Make sure that you have access to a <strong>Billing Project</strong>.</p>
+<ul>
+<li>If you are attending a workshop, make sure your instructor has your Google identity (i.e. email address) that you used to create your AnVIL account, so that they can add you to the workshop Billing Project.</li>
+<li>If you are working through this content independently, you will need to set one up yourself, or contact whoever is managing billing for your team.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="mage-dataset" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> MAGE Dataset<a href="hands-on-exercises.html#mage-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For this exercise, we will be working with some data from the Multi-ancestry Analysis of Gene Expression (MAGE) dataset. The MAGE dataset contains RNA-seq data representing 26 globally-distributed populations across five continental groups.</p>
+<p><img src="03-hands-on-anvil_files/figure-html/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw_h6f9a593aac11593d_0_0.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>MAGE is an open access dataset, so no special permissions are needed to work with the data. We won’t dig very deeply into the data today, but if you’re curious, you can find out more about the project in the <a href="https://doi.org/10.1038/s41586-024-07708-2">MAGE paper</a> and the <a href="https://github.com/mccoy-lab/MAGE">MAGE GitHub repository</a>.</p>
+<p>To help you get started, we have set up a Workspace containing some of the MAGE data. To keep these exercises quick and cheap, this Workspace only includes a few of the MAGE files.</p>
+<div class="notice">
+<p>After logging in to Terra, please navigate to <a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage" class="uri">https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage</a></p>
+</div>
+</div>
+<div id="clone-workspace" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Clone Workspace<a href="hands-on-exercises.html#clone-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We have set up this Workspace so that everyone has “read” access, but only the AnVIL Training Team has permission to “write” or “compute”. This means</p>
+<ul>
+<li>✅ You can see the files in this Workspace</li>
+<li>❌ You <strong>cannot</strong> edit the files or add more files</li>
+<li>❌ You <strong>cannot</strong> launch an interactive computing environment or run a compute job.</li>
+</ul>
+<p>These settings prevent other AnVIL users from overwriting the files or spending down the AnVIL Training Team’s computing budget.</p>
+<p>The first thing you will need to do is to <strong>“clone” the Workspace</strong>. This will create your own, private copy of the Workspace where you will be able to edit files and run computation.</p>
+<div class="notice">
+<p><strong>Tip</strong>
+At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.</p>
+</div>
+<p>To clone the MAGE demo Workspace:</p>
+<div class="borrowed_chunk">
+<ol style="list-style-type: decimal">
+<li><p>If you’re not already there, open the MAGE demo Workspace by clicking this link: <a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage" class="uri">https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage</a>.</p></li>
+<li><p>Clone the workspace by clicking the 3-dot menu button (<img src="https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png" width="25" alt="teardrop button" />). Select “Clone”.</p>
+<p><img src="03-hands-on-anvil_files/figure-html/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw_h7654b6cf3b3cecb3_0_348.png" alt="Screenshot showing the 3-dot menu button. The button has been clicked revealing the 'clone' option. The Clone option and the 3-dot menu button are highlighted." width="100%" /></p></li>
+<li><p>You will see a popup box appear, asking you to configure your Workspace</p>
+<ol style="list-style-type: lower-alpha">
+<li>Give your Workspace clone a name by adding an underscore (“_“) and your name or initials (<code>demos-explore-mage_MyName</code>). Workspaces must have unique names, and using your name or initials will help your instructor identify your Workspace if you need help.</li>
+<li>Select the Billing Project that your instructor has provided for this workshop (or use your own).</li>
+<li>Click “Quick Create Workspace”.</li>
+</ol>
+<p><img src="03-hands-on-anvil_files/figure-html/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw_h7654b6cf3b3cecb3_0_522.png" alt="Screenshot showing the 'clone a workspace' popup. The Workspace name, Billing Project, and Quick Create Workspace button have been filled in and highlighted." width="100%" /></p></li>
+<li><p>After a brief wait, you should be dropped into your own copy of the Workspace. You can also find your new Workspace by going to <a href="https://anvil.terra.bio/#workspaces" class="uri">https://anvil.terra.bio/#workspaces</a>, where it will be listed under MY WORKSPACES, or you can navigate to it directly by filling the billing project and name into the url (<code>https://anvil.terra.bio/#workspaces/YOUR_BILLING_PROJECT/YOUR_WORKSPACE_NAME</code>).</p></li>
+</ol>
+</div>
+<p>Congratulations! You are now the <strong>owner</strong> of a shiny new Workspace. Since you are the owner, within your Workspace you can:</p>
+<ul>
+<li>✅ Add, edit, and delete any files in the Workspace</li>
+<li>✅ Launch interactive computing environments and compute jobs (funded by the Billing Project that you selected when you cloned the Workspace)</li>
+<li>✅ Share your private copy of the Workspace with other AnVIL users, and control the permissions they have in your Workspace (by default, you and whoever owns the Billing Project are the only ones with access).</li>
+</ul>
+</div>
+<div id="explore-workspace" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Explore Workspace<a href="hands-on-exercises.html#explore-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Terra Workspaces are the fundamental place for organizing your research on AnVIL Let’s take a few minutes to look around the Workspace and get familiar with how things are organized.</p>
+<div id="dashboard" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Dashboard<a href="hands-on-exercises.html#dashboard" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="03-hands-on-anvil_files/figure-html/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw_h7654b6cf3b3cecb3_0_706.png" alt="Screenshot of the MAGE Workspace Dashboard" width="80%" style="display: block; margin: auto;" /></p>
+<p>When you first open a Workspace, you will land on the Dashboard. The Dashboard contains a quick summary of useful information about the Workspace</p>
+<ul>
+<li><strong>ABOUT THE WORKSPACE</strong>: Similar to a README file, this is a place where you can record any useful information about the workspace, either notes to yourself (in a private Workspace) or information for collaborators (in a shared Workspace).</li>
+<li><strong>WORKSPACE INFORMATION</strong>: Here you can see what permissions you have in the Workspace
+<ul>
+<li><strong>Reader</strong> means you can open the Workspace and see everything, but can’t do any computations or make any edits.</li>
+<li><strong>Writer</strong> means you can run computations, which will charge costs to the Workspace’s Billing Project. Writers can also make edits to the Workspace, such as uploading, modifying, and deleting files.</li>
+<li><strong>Owner</strong> is similar to Writer, but also allows you to control who can access the Workspace.</li>
+</ul></li>
+<li><strong>CLOUD INFORMATION</strong>: Here you can find details about the cloud resources that are backing your Workspace, such as the Google Cloud Bucket where your data are stored, and the Google Billing Project that funds any analyses you do in this workspace.
+This can be useful if you need to access or transfer data to or from your Workspace.</li>
+<li><strong>OWNERS</strong>: Lists the Workspace owners. This can be useful if you need to know who to contact about configuring access to the Workspace or other Workspace issues.</li>
+</ul>
+<div class="reflection">
+<p><strong>Try it yourself!</strong></p>
+<ul>
+<li><p>What is the Google Bucket Name for your cloned Workspace?</p>
+<ul>
+<li><details>
+<summary>
+Hint
+</summary>
+Look under CLOUD INFORMATION
+</details></li>
+</ul></li>
+<li><p>Make an edit to your Workspace description.</p>
+<ul>
+<li><details>
+<summary>
+Hint
+</summary>
+Click the pencil icon next to “ABOUT THIS WORKSPACE”
+</details></li>
+</ul></li>
+</ul>
+</div>
 
+</div>
+</div>
 </div>
 
 
@@ -183,7 +296,7 @@
         </div>
       </div>
 <a href="tour-of-anvil.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="account-setup.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="create-account.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
