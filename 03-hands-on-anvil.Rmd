@@ -95,7 +95,7 @@ Terra Workspaces are the fundamental place for organizing your research on AnVIL
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_706#slide=id.h7654b6cf3b3cecb3_0_706" )
 ```
 
-When you first open a Workspace, you will land on the Dashboard. The Dashboard contains a quick summary of useful information about the Workspace
+When you first open a Workspace, you will land on the Dashboard. The Dashboard contains a quick summary of useful information about the Workspace:
 
 - **ABOUT THE WORKSPACE**: Similar to a README file, this is a place where you can record any useful information about the workspace, either notes to yourself (in a private Workspace) or information for collaborators (in a shared Workspace).
 - **WORKSPACE INFORMATION**: Here you can see what permissions you have in the Workspace. 
@@ -124,11 +124,11 @@ This can be useful if you need to access or transfer data to or from your Worksp
 
 ### Data
 
-```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Data tab. The MAGE datatable has been selected.", fig.align="center"}
+Under the hood, all data on AnVIL is stored in Google Cloud Buckets with unique identifiers (e.g. `gs://fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90/expression.counts.csv`). But these can be annoying to work with. In the **DATA tab**, Terra provides tools to help manage the data associated with your Workspace.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Data tab. The MAGE data table has been selected.", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_722#slide=id.h7654b6cf3b3cecb3_0_722" )
 ```
-
-Under the hood, all data on AnVIL is stored in Google Cloud Buckets with unique identifiers (e.g. `gs://fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90/expression.counts.csv`). But these can be annoying to work with. In the **DATA tab**, Terra provides tools to help manage the data associated with your Workspace.
 
 
 **TABLES**
@@ -139,23 +139,31 @@ This is where you will usually view and manage the majority of your data. Data t
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_715#slide=id.h7654b6cf3b3cecb3_0_715" )
 ```
 
-Often, a data table will be organized with one row per sample. The columns can contain text or numeric values (such as metadata about the sample), or can contain links to files (such as fastq or vcf files).
+Often, a data table will be organized with one row per sample. The columns can contain text or numeric values (such as metadata about the sample), or can contain links to files (such as fastq or vcf files). In this example (not from the MAGE demo workspace), there is a `cram` file and a `counts.tsv` file for each sample.
 
 Data tables are designed to integrate cleanly with workflows, which can be configured to read data table columns as input, and write their results to new columns in the data table. This makes it easy to keep track of which downstream files were generated from which raw data files. For example, you could configure an alignment workflow to read the fastq files from one column and automatically generate a new column with links to the resulting bam files for each sample.
 
 For more information about working with data tables, see the Terra documentation on [Managing Data with Tables](https://support.terra.bio/hc/en-us/articles/360025758392-Managing-data-with-tables).
 
 
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Data tab. The Reference Table section is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_737#slide=id.h7654b6cf3b3cecb3_0_737" )
+```
+
 **REFERENCE DATA**
 
-This is a convenient place to import public reference data provided by Terra. The Broad Institute provides reference files for common organisms (including hg38 and T2T human, as well as a few model organisms). If these references are suitable for your research, using the data provided by the Broad Institute means you do not have to do any work to import them into Terra, and you do not have to pay storage costs for them.
+This is a convenient place to import public reference data provided by Terra. The Broad Institute provides reference files for common organisms (including hg38 and T2T human, as well as a few model organisms). If these references are suitable for your research, using the data provided by the Broad Institute means you do not have to do any work to import them into Terra, and you do not have to pay storage costs for them. We have not imported any reference data into the MAGE demo Workspace.
 
 For more information, see the documentation on [Broad Public Reference Data](https://support.terra.bio/hc/en-us/articles/4403695390235-Broad-Public-Reference-Data).
 
 
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Data tab. The Other Data section is highlighted and Workspace data has been selected.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_744#slide=id.h7654b6cf3b3cecb3_0_744" )
+```
+
 **OTHER DATA**
 
-Here you can store additional data and links to files that don’t fit nicely in your Tables. These could be computational tools (scripts, Docker images, config files, etc.) that you use across many samples. Or they could be reference genomes and associated files, if you’re bringing your own. Anything that you want to be easy to find but that doesn’t belong in your data tables can be placed here. 
+Here you can store additional data and links to files that don’t fit nicely in your data tables. These could be computational tools (scripts, Docker images, config files, etc.) that you use across many samples. Or they could be reference genomes and associated files, if you’re bringing your own. Anything that you want to be easy to find but that doesn’t belong in your data tables can be placed here.
 
 In our demo MAGE workspace, we use Workspace Data to store a link to the start-up script for installing conda in our Jupyter cloud environment.
 
