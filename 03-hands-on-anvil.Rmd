@@ -197,10 +197,10 @@ One important thing to know when cloning a Workspace, is that **the cloned copy 
 Files which are stored outside the current workspace are marked with a diamond-shaped information icon in data tables.
 
 ```{r, echo=FALSE, out.width="80%", fig.alt="Zoomed-in screenshot of a Terra Data Table with a column that contains links to files. The diamond-shaped info icon next to the first filename is highlighted.", fig.align="center"}
-ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_744#slide=id.h7654b6cf3b3cecb3_0_744" )
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_15#slide=id.h2fb84efbdc71517d_0_15" )
 ```
 
-https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_15#slide=id.h2fb84efbdc71517d_0_15
+
 
 A useful pattern that takes advantage of this is to create a Workspace for storing primary data, and to grant people read-only access to this Workspace. They can then clone the Workspace to carry out their analyses, without incurring any storage fees for that data. This protects the primary data from being accidentally overwritten, and also prevents it from getting cluttered with intermediate results and other analysis artifacts.
 
