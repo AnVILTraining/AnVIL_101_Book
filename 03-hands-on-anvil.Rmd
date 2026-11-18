@@ -178,7 +178,7 @@ Files from your Workspace are stored in Google buckets. You can find the exact l
 
 If you click on the filename, you will see a popup with more information about the file.
 
-```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the File Details popup from Terra. The button labeled 'Download for <$0.01" is highlighted'. The textbox containing an example terminal command is also highlighted. fig.align="center"}
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the File Details popup from Terra. The button labeled 'Download for <$0.01' is highlighted". The textbox containing an example terminal command is also highlighted. fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_8#slide=id.h2fb84efbdc71517d_0_8" )
 ```
 
