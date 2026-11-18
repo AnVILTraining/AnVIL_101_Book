@@ -165,7 +165,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDB
 
 Here you can store additional data and links to files that don’t fit nicely in your data tables. These could be computational tools (scripts, Docker images, config files, etc.) that you use across many samples. Or they could be reference genomes and associated files, if you’re bringing your own. Anything that you want to be easy to find but that doesn’t belong in your data tables can be placed here.
 
-In our demo MAGE workspace, we use Workspace Data to store a link to the start-up script for installing conda in our Jupyter cloud environment.
+In our demo MAGE workspace, we use Workspace Data to store a link to a start-up script for installing conda in a Jupyter cloud environment.
 
 
 
