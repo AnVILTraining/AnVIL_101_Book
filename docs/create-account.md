@@ -1,5 +1,5 @@
 
-# Account Setup
+# Account Setup {#create-account}
 
 Please complete these steps to sign up for AnVIL. This should take less than 15 minutes.
 **This will allow you to follow along with the hands-on exercises**.

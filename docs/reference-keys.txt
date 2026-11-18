@@ -15,4 +15,11 @@ terra
 dockstore
 wrap-up
 hands-on-exercises
-account-setup
+preparation
+mage-dataset
+clone-workspace
+explore-workspace
+dashboard
+data-1
+where-does-your-data-live
+create-account
