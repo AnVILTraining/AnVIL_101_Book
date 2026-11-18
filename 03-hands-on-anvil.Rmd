@@ -168,6 +168,62 @@ Here you can store additional data and links to files that don’t fit nicely in
 In our demo MAGE workspace, we use Workspace Data to store a link to a start-up script for installing conda in a Jupyter cloud environment.
 
 
+#### Where does your data live?
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Zoomed-in screenshot of a Terra Data Table with a column that contains links to files. The clipboard icon next to the first filename is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_0#slide=id.h2fb84efbdc71517d_0_0" )
+```
+
+Files from your Workspace are stored in Google buckets. You can find the exact location of a file that's listed in a Data Table by hovering over its name and clicking "Copy to clipboard". This will give you the "Uniform Resource Identifier", (URI) for the file (e.g. `gs://fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90/expression.counts.csv`), which you can use to interact with it through the terminal, via the `gcloud` command-line tool. The first part of the URI indicates the Google bucket that it lives in (e.g. `fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90`).
+
+If you click on the filename, you will see a popup with more information about the file.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the File Details popup from Terra. The button labeled 'Download for <$0.01" is highlighted'. The textbox containing an example terminal command is also highlighted. fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_8#slide=id.h2fb84efbdc71517d_0_8" )
+```
+
+
+This popup includes a convenient command for copying the file out of the Google bucket. It also shows the **cost to download or copy the file**, since Google charges "egress" fees for copying files out of a bucket.
+
+:::{.warning}
+
+One important thing to know when cloning a Workspace, is that **the cloned copy of a Workspace does not automatically get its own copy of the files**. Instead, links in a clone’s data tables point back to the original Workspace. This is very useful for saving on storage costs, but can occasionally cause some confusion.
+
+- If someone does not have at least "Reader" access to the original Workspace, they won’t be able to access the files, even if they have access to the clone.
+- If files are deleted in the original Workspace, they will no longer be available in the clone.
+
+:::
+
+Files which are stored outside the current workspace are marked with a diamond-shaped information icon in data tables.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Zoomed-in screenshot of a Terra Data Table with a column that contains links to files. The diamond-shaped info icon next to the first filename is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_744#slide=id.h7654b6cf3b3cecb3_0_744" )
+```
+
+https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_15#slide=id.h2fb84efbdc71517d_0_15
+
+A useful pattern that takes advantage of this is to create a Workspace for storing primary data, and to grant people read-only access to this Workspace. They can then clone the Workspace to carry out their analyses, without incurring any storage fees for that data. This protects the primary data from being accidentally overwritten, and also prevents it from getting cluttered with intermediate results and other analysis artifacts.
+
+:::{.reflection}
+
+**Try it yourself!**
+
+- Which files in the `MAGE` data table are in your Workspace’s bucket, and which of them are in the original Workspace?
+
+  - <details> <summary>Answer </summary> All the files in this table belong to the original Workspace. They all have the diamond-shaped information icon next to them. </details>
+
+- What is the URI (including the Google bucket) of the file containing the MAGE sample metadata?
+
+  - <details> <summary>Hint </summary> Open the `MAGE` data table, then hover over the file name `sample.metadata.MAGE.v1.0.txt` and click “Copy to clipboard”. Paste this anywhere to see the URI. </details>
+
+- Under Workspace Data, what is the command to download the startup script (`install-conda.sh`)?
+
+  - <details> <summary>Hint </summary> Open “Workspace Data”, then click on the filename (`install-conda.sh`). You should see a popup with information about the file, including an example command showing you how to download it from a terminal. </details>
+
+:::
+
+
+
 
 
 
