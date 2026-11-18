@@ -1,3 +1,233 @@
 # Hands-on Exercises
 
-Coming soon!
+In this chapter you will get some hands-on experience with AnVIL. You will first **clone a Terra Workspace**, creating your own space where you can organize data and carry out analyses. You will then **explore your Workspace**, learning where your data lives and how Terra is organized. Finally, you will learn how to **launch a cloud computing environment** (RStudio).
+
+## Preparation
+
+:::{.warning}
+
+1. If you have not previously done so, please follow the [account setup instructions](#create-account) to **create an AnVIL account**.
+2. Make sure that you have access to a **Billing Project**.
+
+    - If you are attending a workshop, make sure your instructor has your Google identity (i.e. email address) that you used to create your AnVIL account, so that they can add you to the workshop Billing Project.
+    - If you are working through this content independently, you will need to set one up yourself, or contact whoever is managing billing for your team.
+
+:::
+
+
+## MAGE Dataset
+
+For this exercise, we will be working with some data from the Multi-ancestry Analysis of Gene Expression (MAGE) dataset. The MAGE dataset contains RNA-seq data representing 26 globally-distributed populations across five continental groups.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h6f9a593aac11593d_0_0#slide=id.h6f9a593aac11593d_0_0" )
+```
+
+
+MAGE is an open access dataset, so no special permissions are needed to work with the data. We won't dig very deeply into the data today, but if you're curious, you can find out more about the project in the [MAGE paper](https://doi.org/10.1038/s41586-024-07708-2) and the [MAGE GitHub repository](https://github.com/mccoy-lab/MAGE).
+
+To help you get started, we have set up a Workspace containing some of the MAGE data. To keep these exercises quick and cheap, this Workspace only includes a few of the MAGE files.
+
+:::{.notice}
+
+After logging in to Terra, please navigate to https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage
+
+:::
+
+
+## Clone Workspace
+
+We have set up this Workspace so that everyone has "read" access, but only the AnVIL Training Team has permission to "write" or "compute". This means
+
+- ✅ You can see the files in this Workspace
+- ❌ You **cannot** edit the files or add more files
+- ❌ You **cannot** launch an interactive computing environment or run a compute job.
+
+These settings prevent other AnVIL users from overwriting the files or spending down the AnVIL Training Team’s computing budget.
+
+The first thing you will need to do is to **"clone" the Workspace**. This will create your own, private copy of the Workspace where you will be able to edit files and run computation.
+
+:::{.notice}
+**Tip**
+At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.
+:::
+
+To clone the MAGE demo Workspace:
+
+:::{.borrowed_chunk}
+
+1. If you're not already there, open the MAGE demo Workspace by clicking this link: https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage.
+    
+1. Clone the workspace by clicking the 3-dot menu button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png){width=25px}). Select "Clone".
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt="Screenshot showing the 3-dot menu button. The button has been clicked revealing the 'clone' option. The Clone option and the 3-dot menu button are highlighted."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_348#slide=id.h7654b6cf3b3cecb3_0_348")
+    ```
+
+1. You will see a popup box appear, asking you to configure your Workspace
+    a. Give your Workspace clone a name by adding an underscore ("_") and your name or initials (`demos-explore-mage_MyName`). Workspaces must have unique names, and using your name or initials will help your instructor identify your Workspace if you need help.
+    a. Select the Billing Project that your instructor has provided for this workshop (or use your own).
+    a. Click "Quick Create Workspace".
+
+    
+    ```{r, echo=FALSE, out.width = '100%', fig.alt="Screenshot showing the 'clone a workspace' popup. The Workspace name, Billing Project, and Quick Create Workspace button have been filled in and highlighted."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_522#slide=id.h7654b6cf3b3cecb3_0_522")
+    ```
+
+1. After a brief wait, you should be dropped into your own copy of the Workspace. You can also find your new Workspace by going to https://anvil.terra.bio/#workspaces, where it will be listed under MY WORKSPACES, or you can navigate to it directly by filling the billing project and name into the url (`https://anvil.terra.bio/#workspaces/YOUR_BILLING_PROJECT/YOUR_WORKSPACE_NAME`).
+
+:::
+
+Congratulations! You are now the **owner** of a shiny new Workspace. Since you are the owner, within your Workspace you can:
+
+- ✅ Add, edit, and delete any files in the Workspace
+- ✅ Launch interactive computing environments and compute jobs (funded by the Billing Project that you selected when you cloned the Workspace)
+- ✅ Share your private copy of the Workspace with other AnVIL users, and control the permissions they have in your Workspace (by default, you and whoever owns the Billing Project are the only ones with access).
+
+
+## Explore Workspace
+
+Terra Workspaces are the fundamental place for organizing your research on AnVIL Let’s take a few minutes to look around the Workspace and get familiar with how things are organized.
+
+### Dashboard
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Dashboard", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_706#slide=id.h7654b6cf3b3cecb3_0_706" )
+```
+
+When you first open a Workspace, you will land on the Dashboard. The Dashboard contains a quick summary of useful information about the Workspace:
+
+- **ABOUT THE WORKSPACE**: Similar to a README file, this is a place where you can record any useful information about the workspace, either notes to yourself (in a private Workspace) or information for collaborators (in a shared Workspace).
+- **WORKSPACE INFORMATION**: Here you can see what permissions you have in the Workspace. 
+  - **Reader** means you can open the Workspace and see everything, but can’t do any computations or make any edits.
+  - **Writer** means you can run computations, which will charge costs to the Workspace’s Billing Project. Writers can also make edits to the Workspace, such as uploading, modifying, and deleting files.
+  - **Owner** is similar to Writer, but also allows you to control who can access the Workspace.
+- **CLOUD INFORMATION**: Here you can find details about the cloud resources that are backing your Workspace, such as the Google Cloud Bucket where your data are stored, and the Google Billing Project that funds any analyses you do in this workspace.
+This can be useful if you need to access or transfer data to or from your Workspace.
+- **OWNERS**: Lists the Workspace owners. This can be useful if you need to know who to contact about configuring access to the Workspace or other Workspace issues.
+
+
+:::{.reflection}
+
+**Try it yourself!**
+
+- What is the Google Bucket Name for your cloned Workspace?
+
+  - <details> <summary>Hint </summary> Look under CLOUD INFORMATION </details>
+
+- Make an edit to your Workspace description.
+
+  - <details> <summary>Hint </summary> Click the pencil icon next to “ABOUT THIS WORKSPACE” </details>
+
+:::
+
+
+### Data
+
+Under the hood, all data on AnVIL is stored in Google Cloud Buckets with unique identifiers (e.g. `gs://fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90/expression.counts.csv`). But these can be annoying to work with. In the **DATA tab**, Terra provides tools to help manage the data associated with your Workspace.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Data tab. The MAGE data table has been selected.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_722#slide=id.h7654b6cf3b3cecb3_0_722" )
+```
+
+
+**TABLES**
+
+This is where you will usually view and manage the majority of your data. Data tables help you organize your data by creating structured collections of links to the files in Google Buckets.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of a Terra Data Table.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_715#slide=id.h7654b6cf3b3cecb3_0_715" )
+```
+
+Often, a data table will be organized with one row per sample. The columns can contain text or numeric values (such as metadata about the sample), or can contain links to files (such as fastq or vcf files). In this example (not from the MAGE demo workspace), there is a `cram` file and a `counts.tsv` file for each sample.
+
+Data tables are designed to integrate cleanly with workflows, which can be configured to read data table columns as input, and write their results to new columns in the data table. This makes it easy to keep track of which downstream files were generated from which raw data files. For example, you could configure an alignment workflow to read the fastq files from one column and automatically generate a new column with links to the resulting bam files for each sample.
+
+For more information about working with data tables, see the Terra documentation on [Managing Data with Tables](https://support.terra.bio/hc/en-us/articles/360025758392-Managing-data-with-tables).
+
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Data tab. The Reference Table section is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_737#slide=id.h7654b6cf3b3cecb3_0_737" )
+```
+
+**REFERENCE DATA**
+
+This is a convenient place to import public reference data provided by Terra. The Broad Institute provides reference files for common organisms (including hg38 and T2T human, as well as a few model organisms). If these references are suitable for your research, using the data provided by the Broad Institute means you do not have to do any work to import them into Terra, and you do not have to pay storage costs for them. We have not imported any reference data into the MAGE demo Workspace.
+
+For more information, see the documentation on [Broad Public Reference Data](https://support.terra.bio/hc/en-us/articles/4403695390235-Broad-Public-Reference-Data).
+
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the MAGE Workspace Data tab. The Other Data section is highlighted and Workspace data has been selected.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h7654b6cf3b3cecb3_0_744#slide=id.h7654b6cf3b3cecb3_0_744" )
+```
+
+**OTHER DATA**
+
+Here you can store additional data and links to files that don’t fit nicely in your data tables. These could be computational tools (scripts, Docker images, config files, etc.) that you use across many samples. Or they could be reference genomes and associated files, if you’re bringing your own. Anything that you want to be easy to find but that doesn’t belong in your data tables can be placed here.
+
+In our demo MAGE workspace, we use Workspace Data to store a link to a start-up script for installing conda in a Jupyter cloud environment.
+
+
+#### Where does your data live?
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Zoomed-in screenshot of a Terra Data Table with a column that contains links to files. The clipboard icon next to the first filename is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_0#slide=id.h2fb84efbdc71517d_0_0" )
+```
+
+Files from your Workspace are stored in Google buckets. You can find the exact location of a file that's listed in a Data Table by hovering over its name and clicking "Copy to clipboard". This will give you the "Uniform Resource Identifier", (URI) for the file (e.g. `gs://fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90/expression.counts.csv`), which you can use to interact with it through the terminal, via the `gcloud` command-line tool. The first part of the URI indicates the Google bucket that it lives in (e.g. `fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90`).
+
+If you click on the filename, you will see a popup with more information about the file.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Screenshot of the File Details popup from Terra. The button labeled 'Download for <$0.01' is highlighted. The textbox containing an example terminal command is also highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_8#slide=id.h2fb84efbdc71517d_0_8" )
+```
+
+
+This popup includes a convenient command for copying the file out of the Google bucket. It also shows the **cost to download or copy the file**, since Google charges "egress" fees for copying files out of a bucket.
+
+:::{.warning}
+
+One important thing to know when cloning a Workspace, is that **the cloned copy of a Workspace does not automatically get its own copy of the files**. Instead, links in a clone’s data tables point back to the original Workspace. This is very useful for saving on storage costs, but can occasionally cause some confusion.
+
+- If someone does not have at least "Reader" access to the original Workspace, they won’t be able to access the files, even if they have access to the clone.
+- If files are deleted in the original Workspace, they will no longer be available in the clone.
+
+:::
+
+Files which are stored outside the current workspace are marked with a diamond-shaped information icon in data tables.
+
+```{r, echo=FALSE, out.width="80%", fig.alt="Zoomed-in screenshot of a Terra Data Table with a column that contains links to files. The diamond-shaped info icon next to the first filename is highlighted.", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1vJebvBQH_U80gDBvj_1d0USMnhaB3jiavWTLQDhgRuw/edit?slide=id.h2fb84efbdc71517d_0_15#slide=id.h2fb84efbdc71517d_0_15" )
+```
+
+
+
+A useful pattern that takes advantage of this is to create a Workspace for storing primary data, and to grant people read-only access to this Workspace. They can then clone the Workspace to carry out their analyses, without incurring any storage fees for that data. This protects the primary data from being accidentally overwritten, and also prevents it from getting cluttered with intermediate results and other analysis artifacts.
+
+:::{.reflection}
+
+**Try it yourself!**
+
+- Which files in the `MAGE` data table are in your Workspace’s bucket, and which of them are in the original Workspace?
+
+  - <details> <summary>Answer </summary> All the files in this table belong to the original Workspace. They all have the diamond-shaped information icon next to them. </details>
+
+- What is the URI (including the Google bucket) of the file containing the MAGE sample metadata?
+
+  - <details> <summary>Hint </summary> Open the `MAGE` data table, then hover over the file name `sample.metadata.MAGE.v1.0.txt` and click “Copy to clipboard”. Paste this anywhere to see the URI. </details>
+
+- Under Workspace Data, what is the command to download the startup script (`install-conda.sh`)?
+
+  - <details> <summary>Hint </summary> Open “Workspace Data”, then click on the filename (`install-conda.sh`). You should see a popup with information about the file, including an example command showing you how to download it from a terminal. </details>
+
+:::
+
+
+
+
+
+
+
+
+
+
